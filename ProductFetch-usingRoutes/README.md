@@ -1,16 +1,35 @@
-# React + Vite
+# React Project Structure
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project follows a clean and scalable React folder structure.
 
-Currently, two official plugins are available:
+## 📁 Folder Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+src/
+│
+├── assets/                  # Images, icons, videos, static files
+│
+├── components/              # Reusable UI components
+│   ├── Home.jsx
+│   ├── NavBar.jsx
+│   └── ProductCards.jsx
+│
+├── pages/                   # Main pages/screens
+│   ├── DashboardDevSecurity.jsx
+│   ├── DashboardPage.jsx
+│   ├── DashboardSecurity.jsx
+│   ├── MainPage.jsx
+│   ├── NotFound.jsx
+│   ├── Product.jsx
+│   └── ProductDetails.jsx
+│
+├── routes/                  # Application routing
+│   └── AppRouters.jsx
+│
+├── services/                # API calls and backend services
+│   └── api.js
+│
+├── App.css                  # Global app styling
+├── App.jsx                  # Root App component
+├── index.css                # Global CSS
+└── main.jsx                 # Entry point
