@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import getAllProducts from "../services/api";
 import { Link } from "react-router-dom";
-import {useNavigate} from "react-router-dom"
+import {useNavigate} from "react-router-dom";
 
 function Product() {
 

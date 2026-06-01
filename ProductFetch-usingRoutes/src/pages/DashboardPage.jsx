@@ -6,6 +6,7 @@ function DashboardPage() {
             <h1>Dashboard Page</h1>
             <nav>
                 <Link to="security">Security</Link>
+                <br/>
                  <Link to="devsecurity">Dev Security</Link>
             </nav>
 
